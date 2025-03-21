@@ -1,0 +1,25 @@
+{
+    "camera": {
+        "fov": 50,
+        "position": [
+            0,
+            0,
+            -1.5
+        ],
+        "target": [
+            0.001,
+            0,
+            -1.5005
+        ],
+        "startAnim": "none",
+        "animTrack": null
+    },
+    "background": {
+        "color": [
+            1,
+            1,
+            1
+        ]
+    },
+    "animTracks": []
+}
