@@ -6,9 +6,8 @@ Visual Geometry Group, University of Oxford (* denotes equal contribution)
 <a href="https://research.paulengstler.com/syncity"><img src="https://img.shields.io/badge/Project_Page-0969da" alt="Project Page"></a><br>
 
 <img src=".github/main-method.jpg" style="max-width:75%">
-<br><br>
 
-SynCity generates complex and immersive 3D worlds from text prompts and does not require any training or optimization. It leverages the pretrained 2D image generator Flux (for artistic diversity and contextual coherence) and the 3D generator TRELLIS  (for accurate geometry). We incrementally build scenes on a grid in a tile-by-tile fashion: First, we generate each tile as a 2D image, where context from adjacent tiles establishes consistency. Then, we convert the tile into a 3D model. Finally, adjacent tiles are blended seamlessly into a coherent, navigable 3D environment.
+SynCity generates complex and immersive 3D worlds from text prompts and does not require any training or optimization. It leverages the pretrained 2D image generator Flux (for artistic diversity and contextual coherence) and the 3D generator TRELLIS (for accurate geometry). We incrementally build scenes on a grid in a tile-by-tile fashion: First, we generate each tile as a 2D image, where context from adjacent tiles establishes consistency. Then, we convert the tile into a 3D model. Finally, adjacent tiles are blended seamlessly into a coherent, navigable 3D environment.
 
 ## 📦 Installation
 
@@ -17,8 +16,8 @@ SynCity generates complex and immersive 3D worlds from text prompts and does not
 * **Hardware**: An NVIDIA GPU with at least **48GB** of memory is required. We have used A40 and A6000 GPUs.
 * **Software**:
     - The [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) is needed to compile certain submodules. We have tested CUDA versions 11.8 and 12.4.
-    - [Conda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install) is used to create the environment to run the code. This environment will use Python version 3.10.
-    - [Blender 3.6.1](https://www.blender.org/download/release/Blender3.6/blender-3.6.1-linux-x64.tar.xz) is required as part of the pipeline.
+    - [Conda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install) is used to create the environment to run the code. This environment uses Python version 3.10.
+    - [Blender 3.6.19](https://www.blender.org/download/release/Blender3.6/blender-3.6.19-linux-x64.tar.xz) is required as part of the pipeline.
 
 ### Installation Steps
 
@@ -45,17 +44,17 @@ Make sure to have set the environment variable `CUDA_HOME`, which should point t
 
 ## ⚙️ Usage
 
-Make sure to have activated the `syncity` Conda environment. To run the world generation pipeline, at least one inpainting server needs to be available. To start a server, run `./inpainting_server.sh --run`. The script will provide you with a *local URL* (e.g., `http://127.0.0.1:7860`), which is later passed as an argument to the pipeline. Make note of it!
+Make sure to have activated the `syncity` Conda environment. To run the world generation pipeline, at least one inpainting server needs to be available. To start a server, run `./inpainting_server.sh --run`. The script will provide you with a *local URL* (e.g., `http://127.0.0.1:7860`), which is later passed as an argument to the pipeline. Be sure to save it for later use.
 
-The process to generate a world is split into two straight-forward steps.
+The process to generate a world is split into two straightforward steps.
 
 ### Step 1: Generating Tiles
-The tiles are generated using an instructions file, which contain the prompts to generate each tile (see some examples in the `instructions` folder). To generate a set of tiles that will be saved to `scenes/solarpunk`, run:
+The tiles are generated using an instruction file, which contain the prompts to generate each tile (see some examples in the `instructions` folder). To generate a set of tiles that will be saved to `scenes/solarpunk`, run:
 ```
 python run_pipeline.py --instructions instructions/3x3/solarpunk.json --prefix scenes/solarpunk --gradio_url=http://127.0.0.1:7860
 ```
 
-This script will parallelize tile generation where possible if multiple GPUs are available. If the script is stalling for longer than a minute, consider running the tile generation synchronously (`--parallel=False`). Furthermore, if a single tile keeps being regenerated, consider interrupting the script and replacing the offending tile's prompt. Then, restart the script with `--skip_existing=True` to ensure it will not overwrite existing tiles. Alternatively, see the "Advanced Usage" section on how to adjust the tile rejection criteria.
+This script will parallelize tile generation where possible if multiple GPUs are available. If the script is stalling for longer than a minute, consider running the tile generation synchronously (`--parallel=False`). Furthermore, if a single tile keeps being regenerated, consider interrupting the script and replacing the offending tile's prompt. Then, restart the script with `--skip_existing=True` to ensure it will not overwrite existing tiles. Alternatively, see the ["Advanced Usage"](#advanced_usage) section on how to adjust the tile rejection criteria.
 
 ### Step 2: Blending Tiles
 To create smooth transitions between tiles and refine their boundary regions, run the blending script:
@@ -75,7 +74,7 @@ If you want to generate your own set of instructions to create a grid, there are
 
 We are excited to see the amazing grids you will build. Please share them with us!
 
-In our own experiments, we have found that some types of prompts work better than others. We want to share our insights here, but acknowledge that this list is by no means exhaustive.
+In our own experiments, we have found that some types of prompts work better than others. We want to share our insights here, but we acknowledge that this list is by no means exhaustive.
 
 * **Use open-space tile prompts**. Free-standing buildings and objects are preferable to room-like prompts, which encourage walls at the edges of a tile.
     - ✅ A restaurant with generous outdoor seating
@@ -90,10 +89,11 @@ In our own experiments, we have found that some types of prompts work better tha
     - ✅ A house with a river flowing in front of it
     - ❌ A part of a roller coaster with vertical loops
 
-* **Experiment with density**. While tiles can house individual objects or buildings, they allow for high complexity too.
+* **Experiment with density**. While tiles can house individual objects or buildings, they also support highly complex layouts.
     - 1️⃣ A café surrounded by lots of green
     - 🔢 A suburban scene with lots of green, cafés, restaurants and boutiques, some cars
 
+<a id="advanced_usage"></a>
 ### Advanced Usage
 
 - If you would like to replace a tile in the final grid (e.g., the tile at coordinate `(2,1)`), you may resample it. Remember that you will need to re-run the blending step (you may replace multiple tiles at the same time).
@@ -173,4 +173,5 @@ If you find this work helpful, please consider citing our paper:
     booktitle={Arxiv}
 }
 ```
+
 
