@@ -1,0 +1,52 @@
+{
+    "tiles": [
+        {
+            "prompt": "a cute family house with a cute garden",
+            "x": 0,
+            "y": 0
+        },
+        {
+            "prompt": "a greenhouse with some flowers next to it",
+            "x": 1,
+            "y": 0
+        },
+        {
+            "prompt": "a small river passing through",
+            "x": 2,
+            "y": 0
+        },
+        {
+            "prompt": "some large rocks next to a footpath",
+            "x": 0,
+            "y": 1
+        },
+        {
+            "prompt": "a barn with some hay bales and a tractor",
+            "x": 1,
+            "y": 1
+        },
+        {
+            "prompt": "a small pond with a wooden bridge",
+            "x": 2,
+            "y": 1
+        },
+        {
+            "prompt": "a cute pink house with a nice porch",
+            "x": 0,
+            "y": 2
+        },
+        {
+            "prompt": "a retro car parked next to a tree",
+            "x": 1,
+            "y": 2
+        },
+        {
+            "prompt": "a few benches and a street lamp",
+            "x": 2,
+            "y": 2
+        }
+
+
+    ],
+    "prompt": "{tile_prompt}, realistic textures, soft diffused shading and lighting, subtle gradients, isometric perspective, vibrant colors with a warm charm, part of a cozy fantasy town or a city-building game, meticulous detailing"
+}

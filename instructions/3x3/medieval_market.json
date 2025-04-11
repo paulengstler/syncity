@@ -1,0 +1,51 @@
+{
+    "tiles": [
+      {
+        "prompt": "a stream of water in front of a bustling medieval market with rustic wooden stalls",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "prompt": "a stream of water in front of a bustling medieval market with rustic wooden stalls",
+        "x": 1,
+        "y": 0
+      },
+      {
+        "prompt": "a stream of water in front of a tent of a traveling merchant, with colorful fabrics and exotic wares",
+        "x": 2,
+        "y": 0
+      },
+      {
+        "prompt": "a bustling medieval market with rustic wooden stalls and cheerful vendors",
+        "x": 0,
+        "y": 1
+      },
+      {
+        "prompt": "a bustling medieval market with rustic wooden stalls and cheerful vendors",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "prompt": "a quaint chapel with ivy-draped walls and soft glowing lanterns",
+        "x": 2,
+        "y": 1
+      },
+      {
+        "prompt": "a bustling medieval market with rustic wooden stalls and cheerful vendors",
+        "x": 0,
+        "y": 2
+      },
+      {
+        "prompt": "a bustling medieval market with rustic wooden stalls and cheerful vendors",
+        "x": 1,
+        "y": 2
+      },
+      {
+        "prompt": "a bustling medieval market with rustic wooden stalls and cheerful vendors",
+        "x": 2,
+        "y": 2
+      }
+    ],
+    "prompt": "{tile_prompt}, on top of a base, medieval setting, glowing lanterns, realistic textures, soft diffused shading and lighting, subtle gradients, isometric perspective, vibrant colors with a warm charm, part of a city-building game, meticulous detailing"
+  }
+  

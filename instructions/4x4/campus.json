@@ -1,0 +1,86 @@
+{
+    "tiles": [
+      {
+        "prompt": "an ivy-covered red brick building with classical columns and arched windows",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "prompt": "a quaint courtyard featuring a stone fountain and weathered benches under mature trees",
+        "x": 1,
+        "y": 0
+      },
+      {
+        "prompt": "a historic lecture hall with tall, arched windows and detailed masonry accents",
+        "x": 2,
+        "y": 0
+      },
+      {
+        "prompt": "a modern student center with a sleek glass facade",
+        "x": 3,
+        "y": 0
+      },
+      {
+        "prompt": "a traditional dormitory with ivy crawling up its red brick facade and small, inviting windows",
+        "x": 0,
+        "y": 1
+      },
+      {
+        "prompt": "a library building",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "prompt": "a sunlit quad with neatly trimmed lawns, scattered autumn leaves, and a peaceful ambience",
+        "x": 2,
+        "y": 1
+      },
+      {
+        "prompt": "a classic dining hall boasting large arched windows and a warm, welcoming glow",
+        "x": 3,
+        "y": 1
+      },
+      {
+        "prompt": "a modern academic building blending glass and brick while harmonizing with classic campus style",
+        "x": 0,
+        "y": 2
+      },
+      {
+        "prompt": "a sculpture garden dotted with classical statues among blooming flower beds",
+        "x": 1,
+        "y": 2
+      },
+      {
+        "prompt": "a vibrant student gathering spot with outdoor seating and a mural celebrating academic excellence",
+        "x": 2,
+        "y": 2
+      },
+      {
+        "prompt": "a serene campus garden with winding paths, mature trees, and intimate study nooks",
+        "x": 3,
+        "y": 2
+      },
+      {
+        "prompt": "a traditional chapel with stained glass windows and a modest steeple reaching skyward",
+        "x": 0,
+        "y": 3
+      },
+      {
+        "prompt": "a small athletic field with vintage bleachers and a well-kept patch of green turf",
+        "x": 1,
+        "y": 3
+      },
+      {
+        "prompt": "a science building featuring large observatory-style windows and subtle modern accents",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "prompt": "a picturesque campus gate with ornate ironwork and a stone archway welcoming visitors",
+        "x": 3,
+        "y": 3
+      }
+    ],
+    "prompt": "{tile_prompt}, on top of a base, east coast university, ivy-clad red brick buildings, cobblestone paths, gentle autumn light, soft warm lighting, realistic textures, subtle gradients, isometric perspective, academic charm, and meticulous detailing"
+  }
+  

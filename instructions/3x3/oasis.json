@@ -1,0 +1,51 @@
+{
+    "tiles": [
+      {
+        "prompt": "a library building with large glass panels and intricate tilework",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "prompt": "a lavish courtyard featuring reflective water pools and ambient neon accents",
+        "x": 1,
+        "y": 0
+      },
+      {
+        "prompt": "a compact market pavilion with sleek curves and intricate tilework",
+        "x": 2,
+        "y": 0
+      },
+      {
+        "prompt": "a serene water feature with cascading waterfalls over patterned stone, softly illuminated",
+        "x": 0,
+        "y": 1
+      },
+      {
+        "prompt": "a central plaza crowned by a futuristic dome with geometric light installations",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "prompt": "a small pavilion with a high-tech fountain and mosaic columns blending tradition and innovation",
+        "x": 2,
+        "y": 1
+      },
+      {
+        "prompt": "a garden nook with stylized palm trees and interactive holographic art displays",
+        "x": 0,
+        "y": 2
+      },
+      {
+        "prompt": "a reflective lounge area with modern stone seating accented by vibrant, patterned tiles",
+        "x": 1,
+        "y": 2
+      },
+      {
+        "prompt": "a compact cultural alcove showcasing digital calligraphy and intricate mosaics",
+        "x": 2,
+        "y": 2
+      }
+    ],
+    "prompt": "{tile_prompt} in a futuristic Arabic oasis, golden, vibrant saturated colors, ornate mosaic patterns, flowing water features, lush palm trees, ambient neon lighting, isometric perspective, realistic textures, soft diffused shading and lighting, subtle gradients, meticulous detailing, part of a city-building game"
+  }
+  

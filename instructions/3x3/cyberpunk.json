@@ -1,0 +1,51 @@
+{
+    "tiles": [
+      {
+        "prompt": "an apartment building with flickering neon signs and a holographic rooftop garden",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "prompt": "a dark street lined with futuristic storefronts and glowing digital graffiti",
+        "x": 1,
+        "y": 0
+      },
+      {
+        "prompt": "an urban plaza featuring a massive holographic billboard displaying cryptic ads",
+        "x": 2,
+        "y": 0
+      },
+      {
+        "prompt": "a dilapidated building with shattered windows and neon outlines revealing hidden rooms",
+        "x": 0,
+        "y": 1
+      },
+      {
+        "prompt": "an abandoned cyber-cafe with scattered tech debris and augmented reality murals",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "prompt": "a side street overflowing with digital billboards and pulsating neon lights",
+        "x": 2,
+        "y": 1
+      },
+      {
+        "prompt": "a post-apocalyptic post office with rusted mailboxes and flickering holographic mail carriers",
+        "x": 0,
+        "y": 2
+      },
+      {
+        "prompt": "a futuristic marketplace with cybernetic vendors sheltered under neon umbrellas",
+        "x": 1,
+        "y": 2
+      },
+      {
+        "prompt": "an old factory converted into a neon-lit nightclub",
+        "x": 2,
+        "y": 2
+      }
+    ],
+    "prompt": "{tile_prompt}, on top of a base, cyberpunk cityscape on a rainy night, neon-lit alleys, post-apocalyptic ambiance, realistic textures, dramatic reflections, soft diffused shading and lighting, subtle gradients, isometric perspective, vibrant neon colors with a futuristic edge, part of a city-building game, meticulous detailing"
+  }
+  

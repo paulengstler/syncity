@@ -1,0 +1,21 @@
+Assume you had access to an AI model that can generate small-scale cities on an isometric grid by creating individual tiles.
+For each of these tiles (identified by their 2D position), a short but expressive text prompt has to be provided.
+Additionally, a global prompt is used, which provides context, lighting, time of day, as well as the art style.
+The prompts of the tiles can be generic but they might have a semantic connection to neighbouring tiles (such that a river can flow through the city on multiple tiles).
+The format for the instructions to the AI model is JSON.
+Consider the following example:
+
+{
+    "tiles":
+        [
+            { "prompt": "ancient stone bridge over a stream", "x": 0, "y": 0 },
+            { "prompt": "lively stream past mossy banks", "x": 1, "y": 0 },
+            { "prompt": "serene pond reflecting moonlight", "x": 0, "y": 1 },
+            { "prompt": "bustling medieval market street", "x": 1, "y": 1 }
+        ],
+    "prompt": "{tile_prompt}, medieval setting, isometric view, glowing lanterns, soft shading, vibrant colors, detailed textures"
+}
+
+The art style and perspective mentioned in the prompt should be maintained. The rest may be freely adapted.
+There are no limits to the setting, the sky is your limit.
+Now, please generate a 3 x 3 grid.

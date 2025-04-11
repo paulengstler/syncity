@@ -1,0 +1,51 @@
+{
+    "tiles": [
+      {
+        "prompt": "a futuristic habitat dome with solar panels",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "prompt": "the surface of Mars with a red rocky terrain",
+        "x": 1,
+        "y": 0
+      },
+      {
+        "prompt": "a research outpost with experimental rovers",
+        "x": 2,
+        "y": 0
+      },
+      {
+        "prompt": "multiple greenhouse domes teeming with greenery in a controlled climate",
+        "x": 0,
+        "y": 1
+      },
+      {
+        "prompt": "a futuristic energy array",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "prompt": "a storage and maintenance facility filled with high-tech containers and repair stations",
+        "x": 2,
+        "y": 1
+      },
+      {
+        "prompt": "a rover depot with vehicles and repair stations set against the red rocky terrain",
+        "x": 0,
+        "y": 2
+      },
+      {
+        "prompt": "a scientific research lab with futuristic equipment",
+        "x": 1,
+        "y": 2
+      },
+      {
+        "prompt": "a futuristic habitat dome with solar panels",
+        "x": 2,
+        "y": 2
+      }
+    ],
+    "prompt": "{tile_prompt} on the rocky surface of Planet Mars, red rocky terrain, futuristic architecture, sci-fi aesthetic, realistic textures, soft diffused lighting, subtle gradients, isometric perspective, vibrant high-tech colors, part of a city-building game, meticulous detailing"
+  }
+  

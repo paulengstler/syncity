@@ -1,0 +1,86 @@
+{
+    "tiles": [
+      {
+        "prompt": "a bustling café with outdoor seating beneath large oak trees and a couple of parked cars by the entrance",
+        "x": 0,
+        "y": 3
+      },
+      {
+        "prompt": "a quaint boutique shop with a colorful awning, and mature trees framing the scene",
+        "x": 1,
+        "y": 3
+      },
+      {
+        "prompt": "a charming corner grocery shop displaying fresh produce, with a parked car and leafy trees in the background",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "prompt": "a modern bakery, a delivery truck idling outside, and clusters of suburban trees",
+        "x": 3,
+        "y": 3
+      },
+      {
+        "prompt": "a peaceful residential area featuring a row of parked cars along a well-kept road and tall trees providing generous shade",
+        "x": 0,
+        "y": 2
+      },
+      {
+        "prompt": "a park with a casual café kiosk, scattered benches, and flowering trees adding bursts of color",
+        "x": 1,
+        "y": 2
+      },
+      {
+        "prompt": "a compact auto service station with a visible service bay, a delivery vehicle on standby, and trees lining the property",
+        "x": 2,
+        "y": 2
+      },
+      {
+        "prompt": "a retro gas station exuding vintage charm with a couple of parked vehicles and mature trees",
+        "x": 3,
+        "y": 2
+      },
+      {
+        "prompt": "a community garden with well-tended hedges and mature trees, with a parked car near a small snack kiosk",
+        "x": 0,
+        "y": 1
+      },
+      {
+        "prompt": "a cozy suburban café with outdoor tables under a canopy of trees",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "prompt": "a modest craft shop with a vibrant awning, a delivery vehicle waiting at the curb, and trees softly framing the facade",
+        "x": 2,
+        "y": 1
+      },
+      {
+        "prompt": "a small roadside café with inviting seating, a parked car, and clusters of trees that accentuate its suburban charm",
+        "x": 3,
+        "y": 1
+      },
+      {
+        "prompt": "a tree-lined suburban avenue with neatly parked cars and a small kiosk hinting at local commerce",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "prompt": "a vibrant local market nestled among tall trees",
+        "x": 1,
+        "y": 0
+      },
+      {
+        "prompt": "a compact shop with a clean suburban road and several parked under trees",
+        "x": 2,
+        "y": 0
+      },
+      {
+        "prompt": "an open, serene space with scattered trees, and subtle signs of suburban activity",
+        "x": 3,
+        "y": 0
+      }
+    ],
+    "prompt": "{tile_prompt} in a suburban scene, rendered with realistic textures, soft diffused lighting, subtle gradients, isometric perspective, vibrant colors, meticulous detailing"
+  }
+  

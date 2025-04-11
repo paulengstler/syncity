@@ -1,0 +1,50 @@
+{
+    "tiles": [
+        {
+            "prompt": "a futuristic solarpunk genetic research building",
+            "x": 0,
+            "y": 0
+        },
+        {
+            "prompt": "a futuristic solarpunk community garden",
+            "x": 1,
+            "y": 0
+        },
+        {
+            "prompt": "a futuristic solarpunk multi-story apartment building with a rooftop garden",
+            "x": 2,
+            "y": 0
+        },
+        {
+            "prompt": "a futuristic solarpunk community center",
+            "x": 0,
+            "y": 1
+        },
+        {
+            "prompt": "a futuristic solarpunk multi-story apartment building with a rooftop garden",
+            "x": 1,
+            "y": 1
+        },
+        {
+            "prompt": "a futuristic solarpunk multi-story office building next to a park",
+            "x": 2,
+            "y": 1
+        },
+        {
+            "prompt": "a futuristic solarpunk multi-story office building next to a park",
+            "x": 0,
+            "y": 2
+        },
+        {
+            "prompt": "a large futuristic solarpunk shopping mall",
+            "x": 1,
+            "y": 2
+        },
+        {
+            "prompt": "a futuristic solarpunk apartment building with a rooftop garden",
+            "x": 2,
+            "y": 2
+        }
+    ],
+    "prompt": "{tile_prompt} surrounded by lots of green, lots of water, soft diffused shading and lighting, subtle gradients, isometric perspective, popping colors, hyperrealistic, part of a city-building game"
+}

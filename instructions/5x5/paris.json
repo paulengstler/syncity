@@ -1,0 +1,131 @@
+{
+    "tiles": [
+      {
+        "prompt": "a quaint Parisian café with wicker chairs out front and a warm golden glow",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "prompt": "a cobblestone street lined with flower boxes and softly lit lampposts",
+        "x": 1,
+        "y": 0
+      },
+      {
+        "prompt": "a street with vintage lampposts casting long shadows in the sun",
+        "x": 2,
+        "y": 0
+      },
+      {
+        "prompt": "a bustling market where vendors display their wares under a golden sky",
+        "x": 3,
+        "y": 0
+      },
+      {
+        "prompt": "a scenic view of the Seine with water reflecting the radiant hues of the sunset",
+        "x": 4,
+        "y": 0
+      },
+      {
+        "prompt": "a Haussmann-style building bathed in soft, warm light",
+        "x": 0,
+        "y": 1
+      },
+      {
+        "prompt": "a picturesque courtyard with ornate ironwork and lush greenery glowing in the sun",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "prompt": "a charming bookstore facade with large windows and subtle hints of vintage charm",
+        "x": 2,
+        "y": 1
+      },
+      {
+        "prompt": "a small bistro with signs in vintage French lettering, illuminated gently",
+        "x": 3,
+        "y": 1
+      },
+      {
+        "prompt": "a quiet bridge over a canal where the water shimmers with the golden light",
+        "x": 4,
+        "y": 1
+      },
+      {
+        "prompt": "a serene park scene with locals strolling among trees ablaze with autumn-like hues",
+        "x": 0,
+        "y": 2
+      },
+      {
+        "prompt": "a busy metro entrance adorned with art nouveau details highlighted by the sun",
+        "x": 1,
+        "y": 2
+      },
+      {
+        "prompt": "a vibrant street scene with fashionable pedestrians and colorful shutters aglow",
+        "x": 2,
+        "y": 2
+      },
+      {
+        "prompt": "an adorable Parisian apartment building with flower boxes and charming balconies",
+        "x": 3,
+        "y": 2
+      },
+      {
+        "prompt": "a lively riverside walkway with charming cafes and gentle reflections on the water",
+        "x": 4,
+        "y": 2
+      },
+      {
+        "prompt": "a classic Parisian bakery with a display of freshly baked pastries behind a glass window",
+        "x": 0,
+        "y": 3
+      },
+      {
+        "prompt": "a small park square featuring an old-fashioned fountain that glows in the fading light",
+        "x": 1,
+        "y": 3
+      },
+      {
+        "prompt": "the Eiffel Tower",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "prompt": "an antique shop with delicately lit signage",
+        "x": 3,
+        "y": 3
+      },
+      {
+        "prompt": "a quiet residential home with windows aglow with golden light",
+        "x": 4,
+        "y": 3
+      },
+      {
+        "prompt": "a lively outdoor market where vendors and colorful produce are bathed in sunset hues",
+        "x": 0,
+        "y": 4
+      },
+      {
+        "prompt": "a historic building with intricate stonework softened by the golden hour",
+        "x": 1,
+        "y": 4
+      },
+      {
+        "prompt": "a small art gallery with contemporary displays lit by streams of warm, natural light",
+        "x": 2,
+        "y": 4
+      },
+      {
+        "prompt": "a quiet riverbank scene with the Seine flowing gently past old stone bridges",
+        "x": 3,
+        "y": 4
+      },
+      {
+        "prompt": "a quiet riverbank scene with the Seine flowing gently past old stone bridges",
+        "x": 4,
+        "y": 4
+      }
+    ],
+    "prompt": "{tile_prompt}, on top of a base, during golden hour, soft warm lighting, long shadows, realistic textures, subtle gradients, isometric perspective, vibrant yet elegant colors, part of a city-building game, meticulous detailing"
+  }
+  

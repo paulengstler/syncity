@@ -1,0 +1,86 @@
+{
+    "tiles": [
+      {
+        "prompt": "a neatly pitched canvas tent",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "prompt": "a vintage caravan with a retro design",
+        "x": 1,
+        "y": 0
+      },
+      {
+        "prompt": "a tents nex to a gentle, glowing campfire",
+        "x": 2,
+        "y": 0
+      },
+      {
+        "prompt": "a stone monument with some flowers at its base",
+        "x": 3,
+        "y": 0
+      },
+      {
+        "prompt": "a tent adorned with warm lanterns",
+        "x": 0,
+        "y": 1
+      },
+      {
+        "prompt": "a caravan",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "prompt": "a clearing scattered with camping gear and a small portable grill",
+        "x": 2,
+        "y": 1
+      },
+      {
+        "prompt": "a brightly colored tent tucked amidst forest foliage",
+        "x": 3,
+        "y": 1
+      },
+      {
+        "prompt": "a patch of trees",
+        "x": 0,
+        "y": 2
+      },
+      {
+        "prompt": "a modern caravan featuring sleek solar panels and a compact design",
+        "x": 1,
+        "y": 2
+      },
+      {
+        "prompt": "a small grouping of tents with string lights twinkling in the early dusk",
+        "x": 2,
+        "y": 2
+      },
+      {
+        "prompt": "a patch of trees",
+        "x": 3,
+        "y": 2
+      },
+      {
+        "prompt": "a patch of trees",
+        "x": 0,
+        "y": 3
+      },
+      {
+        "prompt": "a caravan, softly illuminated from within, hinting at life inside",
+        "x": 1,
+        "y": 3
+      },
+      {
+        "prompt": "a patch of trees",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "prompt": "a brightly colored tent tucked amidst forest foliage",
+        "x": 3,
+        "y": 3
+      }
+    ],
+    "prompt": "large trees surrounding {tile_prompt} in a forest campsite, hyper-realistic textures, subtle gradients, isometric perspective, warm natural colors, meticulous detailing"
+  }
+  

@@ -1,0 +1,50 @@
+{
+    "tiles": [
+        {
+            "prompt": "a typical multi-story house",
+            "x": 0,
+            "y": 0
+        },
+        {
+            "prompt": "a typical multi-story house with a bakery on the ground floor",
+            "x": 1,
+            "y": 0
+        },
+        {
+            "prompt": "a canal with a bridge",
+            "x": 2,
+            "y": 0
+        },
+        {
+            "prompt": "the Eiffel Tower",
+            "x": 0,
+            "y": 1
+        },
+        {
+            "prompt": "a cute park",
+            "x": 1,
+            "y": 1
+        },
+        {
+            "prompt": "a park where a canal starts",
+            "x": 2,
+            "y": 1
+        },
+        {
+            "prompt": "a typical multi-story house",
+            "x": 0,
+            "y": 2
+        },
+        {
+            "prompt": "a typical multi-story house with a bookstore on the ground floor",
+            "x": 1,
+            "y": 2
+        },
+        {
+            "prompt": "a typical multi-story house with a cafe on the ground floor",
+            "x": 2,
+            "y": 2
+        }
+    ],
+    "prompt": "{tile_prompt} in central Paris at night, streetlights, realistic textures, soft diffused shading and lighting, subtle gradients, isometric perspective, vibrant colors with a warm charm, part of a city-building game, meticulous detailing"
+}

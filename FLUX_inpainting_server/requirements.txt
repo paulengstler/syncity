@@ -1,0 +1,8 @@
+diffusers==0.30.2
+torch
+transformers
+huggingface_hub
+gradio
+protobuf
+accelerate
+sentencepiece

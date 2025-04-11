@@ -1,0 +1,50 @@
+{
+    "tiles": [
+        {
+            "prompt": "a typical san francisco multi-story house with a sidewalk",
+            "x": 0,
+            "y": 0
+        },
+        {
+            "prompt": "a flat san francisco two-way street with cars parked on the side",
+            "x": 1,
+            "y": 0
+        },
+        {
+            "prompt": "a typical san francisco multi-story house with a sidewalk",
+            "x": 2,
+            "y": 0
+        },
+        {
+            "prompt": "a large public park with lots of bright flowers and a fountain in the center",
+            "x": 0,
+            "y": 1
+        },
+        {
+            "prompt": "a flat san francisco two-way street with cars parked on the side",
+            "x": 1,
+            "y": 1
+        },
+        {
+            "prompt": "a typical san francisco multi-story house with a sidewalk",
+            "x": 2,
+            "y": 1
+        },
+        {
+            "prompt": "a typical san francisco multi-story house with a sidewalk",
+            "x": 0,
+            "y": 2
+        },
+        {
+            "prompt": "a flat san francisco two-way street with cars parked on the side",
+            "x": 1,
+            "y": 2
+        },
+        {
+            "prompt": "a typical san francisco multi-story house with a sidewalk",
+            "x": 2,
+            "y": 2
+        }
+    ],
+    "prompt": "{tile_prompt}, realistic textures, soft diffused shading and lighting, subtle gradients, isometric perspective, vibrant colors with a warm charm, part of a cozy fantasy town or a city-building game, meticulous detailing"
+}

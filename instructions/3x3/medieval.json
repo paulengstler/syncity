@@ -1,0 +1,51 @@
+{
+    "tiles": [
+      {
+        "prompt": "an ancient stone bridge arching gracefully over a gentle stream",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "prompt": "a lively stream winding past mossy banks and clusters of wildflowers",
+        "x": 1,
+        "y": 0
+      },
+      {
+        "prompt": "a stream next to a tent of a traveling merchant, with colorful fabrics and exotic wares",
+        "x": 2,
+        "y": 0
+      },
+      {
+        "prompt": "a bustling medieval market street with rustic wooden stalls and cheerful vendors",
+        "x": 0,
+        "y": 1
+      },
+      {
+        "prompt": "a charming town square where the stream splits into small rivulets amid cobblestones",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "prompt": "a quaint chapel with ivy-draped walls and soft glowing lanterns",
+        "x": 2,
+        "y": 1
+      },
+      {
+        "prompt": "a row of picturesque stone cottages adorned with flowering window boxes",
+        "x": 0,
+        "y": 2
+      },
+      {
+        "prompt": "a cozy tavern with warm light spilling onto the cobblestone and outdoor seating",
+        "x": 1,
+        "y": 2
+      },
+      {
+        "prompt": "a fortified stucture with a clock tower and banners fluttering in the breeze",
+        "x": 2,
+        "y": 2
+      }
+    ],
+    "prompt": "{tile_prompt}, on top of a base, medieval setting, glowing lanterns, realistic textures, soft diffused shading and lighting, subtle gradients, isometric perspective, vibrant colors with a warm charm, part of a city-building game, meticulous detailing"
+  }
+  

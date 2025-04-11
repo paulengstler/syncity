@@ -1,0 +1,131 @@
+{
+    "tiles": [
+      {
+        "prompt": "a serene clearing with scattered fallen leaves and a winding path",
+        "x": 0,
+        "y": 0
+      },
+      {
+        "prompt": "towering oak trees with richly colored foliage in shades of red and gold",
+        "x": 1,
+        "y": 0
+      },
+      {
+        "prompt": "a quaint stone bench beneath a maple tree shedding fiery leaves",
+        "x": 2,
+        "y": 0
+      },
+      {
+        "prompt": "a small woodland pond reflecting the autumn sky, fringed by birch trees",
+        "x": 3,
+        "y": 0
+      },
+      {
+        "prompt": "a rugged hillside blanketed in vibrant leaves with a distant mountain view",
+        "x": 4,
+        "y": 0
+      },
+      {
+        "prompt": "a rustic wooden cottage with ivy and a chimney releasing gentle smoke, immersed in fall hues",
+        "x": 0,
+        "y": 1
+      },
+      {
+        "prompt": "a narrow cobblestone street lined with autumn trees and swirling leaves, guiding you into the village",
+        "x": 1,
+        "y": 1
+      },
+      {
+        "prompt": "a small marketplace stall adorned with pumpkins, gourds, and seasonal produce",
+        "x": 2,
+        "y": 1
+      },
+      {
+        "prompt": "a charming stone fountain with water trickling over mossy stones and scattered leaves",
+        "x": 3,
+        "y": 1
+      },
+      {
+        "prompt": "a winding path that disappears into a dense cluster of richly colored trees",
+        "x": 4,
+        "y": 1
+      },
+      {
+        "prompt": "a quaint village square paved with cobblestones and bathed in warm autumn light",
+        "x": 0,
+        "y": 2
+      },
+      {
+        "prompt": "an antique lamppost casting a gentle glow over a carpet of fallen leaves",
+        "x": 1,
+        "y": 2
+      },
+      {
+        "prompt": "a vibrant park with a canopy of trees in reds, oranges, and yellows",
+        "x": 2,
+        "y": 2
+      },
+      {
+        "prompt": "a small orchard with fruit trees heavy with ripe apples, set against a backdrop of fall colors",
+        "x": 3,
+        "y": 2
+      },
+      {
+        "prompt": "a scenic overlook where villagers gather to admire the sweeping autumn landscape",
+        "x": 4,
+        "y": 2
+      },
+      {
+        "prompt": "a charming bakery with a wooden sign and large windows displaying seasonal treats",
+        "x": 0,
+        "y": 3
+      },
+      {
+        "prompt": "a cozy café with outdoor seating, surrounded by autumnal potted plants and softly lit lanterns",
+        "x": 1,
+        "y": 3
+      },
+      {
+        "prompt": "a narrow alley featuring a mural that celebrates a vibrant autumn harvest",
+        "x": 2,
+        "y": 3
+      },
+      {
+        "prompt": "a rustic bookstore with warm light spilling onto the street, its window inviting passersby",
+        "x": 3,
+        "y": 3
+      },
+      {
+        "prompt": "a vintage carriage parked near a fountain, adding a timeless charm to the fall setting",
+        "x": 4,
+        "y": 3
+      },
+      {
+        "prompt": "a leafy suburban street where quaint houses are decorated with autumn wreaths",
+        "x": 0,
+        "y": 4
+      },
+      {
+        "prompt": "a row of charming townhouses with glowing windows and porches dressed in fall colors",
+        "x": 1,
+        "y": 4
+      },
+      {
+        "prompt": "a lively community garden bursting with seasonal blooms amid a cascade of falling leaves",
+        "x": 2,
+        "y": 4
+      },
+      {
+        "prompt": "a small bridge arching over a bubbling brook, its banks adorned with clusters of autumn flowers",
+        "x": 3,
+        "y": 4
+      },
+      {
+        "prompt": "a picturesque sunset view over the village, the sky ablaze with rich autumn hues",
+        "x": 4,
+        "y": 4
+      }
+    ],
+    "prompt": "{tile_prompt}, on top of a base, in an autumn wonderland, vivid fall colors, soft warm lighting, realistic textures, soft diffused shading and lighting, subtle gradients, isometric perspective, rich autumn palette, part of a city-building game, meticulous detailing"
+  }
+  
