@@ -10,6 +10,7 @@ check_min_version("0.30.2")
 image_path='https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha/resolve/main/images/bucket.png',
 mask_path='https://huggingface.co/alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha/resolve/main/images/bucket_mask.jpeg',
 prompt='a person wearing a white shoe, carrying a white bucket with text "FLUX" on it'
+prompt_detailed = 'an ivy-covered red brick building with classical columns and arched windows, on top of a base, east coast university, ivy-clad red brick buildings, cobblestone paths, gentle autumn light, soft warm lighting, realistic textures, subtle gradients, isometric perspective, academic charm, and meticulous detailing'
 
 # Build pipeline
 controlnet = FluxControlNetModel.from_pretrained("alimama-creative/FLUX.1-dev-Controlnet-Inpainting-Alpha", torch_dtype=torch.bfloat16)
@@ -47,4 +48,21 @@ result = pipe(
 ).images[0]
 
 result.save('flux_inpaint.png')
+print("Successfully inpaint image")
+
+result = pipe(
+    prompt=prompt_detailed,
+    height=size[1],
+    width=size[0],
+    control_image=image,
+    control_mask=mask,
+    num_inference_steps=28,
+    generator=generator,
+    controlnet_conditioning_scale=0.9,
+    guidance_scale=3.5,
+    negative_prompt="",
+    true_guidance_scale=3.5
+).images[0]
+
+result.save('flux_inpaint_detailed.png')
 print("Successfully inpaint image")

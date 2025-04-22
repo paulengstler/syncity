@@ -13,7 +13,7 @@ SynCity generates complex and immersive 3D worlds from text prompts and does not
 
 ### Prerequisites
 * **System**: The code was tested on Ubuntu 22.04. We expect it to run on other Linux-based distributions too.
-* **Hardware**: An NVIDIA GPU with at least **48GB** of memory is required. We have used A40 and A6000 GPUs.
+* **Hardware**: If the inpainting server is deployed locally, an NVIDIA GPU with at least **48GB** of memory is required. We have used A40 and A6000 GPUs. If you use the inpainting service from replicate, you will need a GPU with at least **16GB** of memory for trellis generation.
 * **Software**:
     - The [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive) is needed to compile certain submodules. We have tested CUDA versions 11.8 and 12.4.
     - [Conda](https://docs.anaconda.com/miniconda/install/#quick-command-line-install) is used to create the environment to run the code. This environment uses Python version 3.10.
@@ -33,9 +33,22 @@ source ./setup.sh --new-env --basic --xformers --diffoctreerast --spconv --mipga
 ```
 Make sure to have set the environment variable `CUDA_HOME`, which should point to your CUDA Toolkit installation. If you run into issues while running this setup script, please refer to [the README in the TRELLIS](https://github.com/microsoft/TRELLIS/blob/main/README.md#installation-steps) repository, which provides additional guidance.
 
-3. Set up the FLUX inpainting server:
+
+3. Set up the FLUX inpainting backend:
+
+**Option1**:  Set up the FLUX inpainting server locally (the server will require around **30GB+ VRAM**):
 ```
 ./inpainting_server.sh --install
+```
+**Option2**: Use replicate web deployment (pay as you go, about 0.03$ for every image and 0.4$ every 3x3 scene). 
+```
+cp .env.example .env 
+
+# fill in your replicate id, which can be obtained here
+# https://replicate.com/account/api-tokens
+
+# install requirements for replicate
+pip install dotenv replicate
 ```
 
 4. Download [Blender 3.6.19](https://www.blender.org/download/release/Blender3.6/blender-3.6.19-linux-x64.tar.xz), extract it into the root directory of this project, and make sure `blender-3.6.19-linux-x64/blender` can be executed on your system.
@@ -51,7 +64,11 @@ The process to generate a world is split into two straightforward steps.
 ### Step 1: Generating Tiles
 The tiles are generated using an instruction file, which contain the prompts to generate each tile (see some examples in the `instructions` folder). To generate a set of tiles that will be saved to `scenes/solarpunk`, run:
 ```
+# option1: locally deploy the inpainting server
 python run_pipeline.py --instructions instructions/3x3/solarpunk.json --prefix scenes/solarpunk --gradio_url=http://127.0.0.1:7860
+
+# option2: use the replicate inpainting service
+python run_pipeline.py --instructions instructions/3x3/solarpunk.json --prefix scenes/solarpunk --parallel=False --inpainter_type=flux_replicate
 ```
 
 This script will parallelize tile generation where possible if multiple GPUs are available. If the script is stalling for longer than a minute, consider running the tile generation synchronously (`--parallel=False`). Furthermore, if a single tile keeps being regenerated, consider interrupting the script and replacing the offending tile's prompt. Then, restart the script with `--skip_existing=True` to ensure it will not overwrite existing tiles. Alternatively, see the ["Advanced Usage"](#advanced_usage) section on how to adjust the tile rejection criteria.
@@ -59,7 +76,11 @@ This script will parallelize tile generation where possible if multiple GPUs are
 ### Step 2: Blending Tiles
 To create smooth transitions between tiles and refine their boundary regions, run the blending script:
 ```
+# option1: locally deploy the inpainting server
 python blend_gaussians.py --compute_rescaled --stitch_images --stitch_slats --gradio_url=http://127.0.0.1:7860 --prefix scenes/solarpunk
+
+# option2: use the replicate inpainting service
+python blend_gaussians.py --compute_rescaled --stitch_images --stitch_slats --inpainter_type=flux_replicate --prefix scenes/solarpunk
 ```
 
 This script will create a `.ply` file with the Gaussians of the entire grid as well as a video rendering.

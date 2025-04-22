@@ -12,6 +12,7 @@ import torch
 import torch.nn.functional as F
 from PIL import Image
 from tqdm.auto import tqdm
+from typing import Literal
 
 import trellis.models as models
 from tile_cutting import z_preserving_crop
@@ -477,6 +478,7 @@ def merge_gaussians(
         stitch_images: bool = False, 
         stitch_slats: bool = False, 
         use_cached: bool = False,
+        inpainter_type: Literal["flux_local", "flux_replicate", "sdxl_replicate"] = "flux_local",
         gradio_url='http://127.0.0.1:7860',
         blender_path: str = 'blender-3.6.19-linux-x64/blender',
         seed: int = 429
@@ -577,9 +579,9 @@ def merge_gaussians(
         rescaled_tiles = dill.load(open(os.path.join(grid_path, 'rescaled_tiles.pkl'), 'rb'))
 
     if stitch_images:
-        from FLUX_inpainting_server.inpaint import Inpainter
+        from inpainting import Inpainter
         import time
-        inpainter = Inpainter(gradio_url)
+        inpainter = Inpainter(inpainter_type, gradio_url)
 
         VIEW_TYPE = 'zoom_out'
         prompts = json.load(open(os.path.join(grid_path, 'instructions.json')))

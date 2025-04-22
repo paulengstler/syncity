@@ -24,7 +24,7 @@ from easydict import EasyDict as edict
 from lpips import LPIPS, im2tensor
 from PIL import Image
 
-from FLUX_inpainting_server.inpaint import Inpainter
+from inpainting import Inpainter
 
 # a brief explanation of the orthographic scale:
 # the ortho scale determines the size of the world in the image
@@ -301,7 +301,7 @@ def inpaint_tile(
         base_ortho_scale: float = 1.75,
 ):  
     if isinstance(server, str):
-        inpainter = Inpainter(server)
+        inpainter = Inpainter("flux_local", server)
     else:
         inpainter = server
     
@@ -510,7 +510,7 @@ def rebased_inpainted_tile(inpainted_image_path, base_slab_path, is_left_tile: b
 
     return merged
 
-def worker(prefix, tile_dict, gradio_url, blender_path, gpu_queue, generated_grid, first_tile_path, tile_mq, task_id, config, init_seed=429, verbose=True):
+def worker(prefix, tile_dict, gradio_url, inpainter_type, blender_path, gpu_queue, generated_grid, first_tile_path, tile_mq, task_id, config, init_seed=429, verbose=True):
     if not verbose:
         sys.stdout = open("/dev/null", 'w')
         sys.stderr = open("/dev/null", 'w')
@@ -575,7 +575,7 @@ def worker(prefix, tile_dict, gradio_url, blender_path, gpu_queue, generated_gri
 
         seed = init_seed + task_id + attempts
 
-        inpainting_server = Inpainter(gradio_url)
+        inpainting_server = Inpainter(inpainter_type, gradio_url)
 
         tile_mq.put({"pos": pos, "state": States.INPAINTING, "task_id": task_id})
 
@@ -688,6 +688,7 @@ def main(
         workers_per_gpu: int = 1,
         seed: int = 1429,
         gradio_url: str = 'http://127.0.0.1:7860',
+        inpainter_type: Literal["flux_local", "flux_replicate", "sdxl_replicate"] = "flux_local",
         blender_path: str = 'blender-3.6.19-linux-x64/blender',
         resample: Tuple[int, int] = None,
         resample_prompt: str = None,
@@ -802,12 +803,12 @@ def main(
             task_id = len(results)
 
             if parallel:
-                res = pool.apply_async(worker, (prefix, tile, gradio_url, blender_path, gpu_queue, generated_grid, first_tile_path, tile_mq, task_id, config, seed), error_callback=partial(announce_crash, tile, task_id))
+                res = pool.apply_async(worker, (prefix, tile, gradio_url, inpainter_type, blender_path, gpu_queue, generated_grid, first_tile_path, tile_mq, task_id, config, seed), error_callback=partial(announce_crash, tile, task_id))
             else:
                 # peek at the gpu queue
                 gpu_id = gpu_queue.get()
                 gpu_queue.put(gpu_id)
-                res = worker(prefix, tile, gradio_url, blender_path, gpu_queue, generated_grid, first_tile_path, tile_mq, task_id, config, seed, verbose=True)
+                res = worker(prefix, tile, gradio_url, inpainter_type, blender_path, gpu_queue, generated_grid, first_tile_path, tile_mq, task_id, config, seed, verbose=True)
                 gpu_queue.put(gpu_id)
 
             results.append(res)
