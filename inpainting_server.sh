@@ -1,6 +1,6 @@
 #!/bin/bash
 # Installation as shown here: https://huggingface.co/spaces/ameerazam08/FLUX.1-dev-Inpainting-Model-Beta-GPU?docker=true
-cd FLUX_inpainting_server
+cd inpainting_server/flux_inpainter
 python -m venv env
 source env/bin/activate
 
