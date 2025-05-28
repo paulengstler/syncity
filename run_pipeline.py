@@ -543,7 +543,7 @@ def worker(prefix, tile_dict, gradio_url, blender_path, gpu_queue, generated_gri
 
     def load_pipeline_in_thread(event, queue):
         # Load the pipeline in a separate thread to avoid blocking the main thread
-        thread_pipeline = TrellisImageTo3DPipeline.from_pretrained("JeffreyXiang/TRELLIS-image-large")
+        thread_pipeline = TrellisImageTo3DPipeline.from_pretrained("jetx/trellis-image-large")
         thread_pipeline.to("cuda")
         queue.put(thread_pipeline)
         event.set()
