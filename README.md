@@ -9,6 +9,8 @@ Visual Geometry Group, University of Oxford (* denotes equal contribution)
 
 SynCity generates complex and immersive 3D worlds from text prompts and does not require any training or optimization. It leverages the pretrained 2D image generator Flux (for artistic diversity and contextual coherence) and the 3D generator TRELLIS (for accurate geometry). We incrementally build scenes on a grid in a tile-by-tile fashion: First, we generate each tile as a 2D image, where context from adjacent tiles establishes consistency. Then, we convert the tile into a 3D model. Finally, adjacent tiles are blended seamlessly into a coherent, navigable 3D environment.
 
+⏭️ Check out our follow-up work [SynCity 3000: Bootstrapping Scene-Scale 3D Diffusion](https://github.com/paulengstler/syncity-3k) (ECCV'26)
+
 ## 📦 Installation
 
 ### Prerequisites
@@ -167,11 +169,12 @@ If you find this work helpful, please consider citing our paper:
 ```bibtex
 @inproceedings{
     engstler2025syncity,
-    title={SynCity: Training-Free Generation of 3D Worlds}
-    author={Paul Engstler and Aleksandar Shtedritski and Iro Laina and Christian Rupprecht and Andrea Vedaldi}
+    title={SynCity: Training-Free Generation of 3D Worlds},
+    author={Paul Engstler and Aleksandar Shtedritski and Iro Laina and Christian Rupprecht and Andrea Vedaldi},
+    booktitle={Proceedings of the International Conference on Computer Vision ({ICCV})},
     year={2025}
-    booktitle={Arxiv}
 }
 ```
 
+⏭️ Check out our follow-up work [SynCity 3000: Bootstrapping Scene-Scale 3D Diffusion](https://github.com/paulengstler/syncity-3k) (ECCV'26)
 
