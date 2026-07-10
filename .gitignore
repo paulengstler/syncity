@@ -398,7 +398,7 @@ FodyWeavers.xsd
 *.sln.iml
 
 # env files from the flux server
-FLUX_inpainting_server/env/lib
+inpainting/flux_inpainting_server/env/lib
 tmp*
 
 # SLURM output
@@ -412,3 +412,12 @@ wandb/*
 *.pth
 
 .vscode/
+
+# Environment variables 
+.env
+
+# Output scenes 
+scenes 
+
+# Blender 
+blender-3.6*/
