@@ -520,8 +520,8 @@ def merge_gaussians(
     scene_vanilla = None
     scene = None
 
-    ss_decoder = models.from_pretrained("JeffreyXiang/TRELLIS-image-large/ckpts/ss_dec_conv3d_16l8_fp16").eval().cuda()
-    pipeline = TrellisImageTo3DPipeline.from_pretrained("JeffreyXiang/TRELLIS-image-large")
+    ss_decoder = models.from_pretrained("jetx/trellis-image-large/ckpts/ss_dec_conv3d_16l8_fp16").eval().cuda()
+    pipeline = TrellisImageTo3DPipeline.from_pretrained("jetx/trellis-image-large")
     pipeline.cuda()
 
     rescaled_tiles = {}
@@ -634,7 +634,7 @@ def merge_gaussians(
     UNCOND=False
     
     if stitch_slats:
-        pipeline = TrellisImageTo3DPipeline.from_pretrained("JeffreyXiang/TRELLIS-image-large")
+        pipeline = TrellisImageTo3DPipeline.from_pretrained("jetx/trellis-image-large")
         pipeline.cuda()
         for tile in tqdm(grid_info, desc="Stitching slats"):
             x, y, = [tile[k] for k in ('x', 'y')]
